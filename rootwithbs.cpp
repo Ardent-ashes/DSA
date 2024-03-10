@@ -10,7 +10,7 @@ double squareRoot(int x) {
 
     while (high - low > epsilon) {
         double mid = low + (high - low) / 2;
-        double square = mid * mid * mid;
+        double square = mid * mid;
 
         if (square == x)
             return mid;
