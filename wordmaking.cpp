@@ -27,18 +27,20 @@ void generate(stack<char>s, string word)
     if(s.size()==word.length())
     {
         printStack(s);
+        return;
     }
     cp=copyStack(s);
     for(int i=0;i<word.length();i++)
     {
         cp.push(word[i]);
         generate(cp,word);
+        cp.pop();
     }
 }
 
 int main()
 {
-    string s="abc";
+    string s="abcd";
     stack<char>e;
     generate(e,s);
 }
