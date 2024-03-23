@@ -32,6 +32,9 @@ int main() {
     if(c=='l') cout<<get_left(ara,x)<<endl;
     if(c=='r') cout<<get_right(ara,x)<<endl;
    }
+    cout<<"Find Parent: ";
+   cin>>t;
+   cout<<ara[(int)((t-1)/2)];
 
     return 0;
 }
